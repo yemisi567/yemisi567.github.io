@@ -1,3 +1,11 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Noto Sans JP";
 }
@@ -27,13 +35,7 @@ thead th:last-child {
 }
 
 /*First row end*/
-.h2 {
-  height: 21px;
-  width: 75px;
-  left: 16px;
-  font-size: 14px;
-  font-family: "Noto Sans JP";
-}
+
 .searchContainer {
   display: inline-flex;
   flex: 1 1 300px;
@@ -210,6 +212,15 @@ body h1 {
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card-container {
+    align-items: start;
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+  }
 }
 .card-container2 {
   display: flex;
